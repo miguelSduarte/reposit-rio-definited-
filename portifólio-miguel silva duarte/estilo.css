@@ -1,0 +1,208 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e2d2d; 
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+a {
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgb(22, 106, 175); /* Fundo escuro no cabeçalho */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    
+}
+
+/* Navegação */
+nav {
+    background-color: rgb(10, 95, 165); /* Cor de fundo mais escura na barra de navegação */
+    overflow: hidden;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+/* Conteúdo */
+.container {
+    padding: 20px;
+    
+}
+
+/* Seções */
+section {
+    margin-bottom: 40px;
+    
+    
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:rgb(255, 255, 255) ;
+}
+
+/* Projetos */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.project {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: calc(33% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project h3 {
+    font-size: 1.5em;
+
+}
+
+.project p {
+    font-size: 1em;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+}
+
+/* Habilidades */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.skill h3 {
+    font-size: 1.5em;
+}
+
+.skill p {
+    font-size: 1em;
+}
+
+/* Contato */
+.contact-info {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-info h3 {
+    font-size: 1.5em;
+}
+
+.contact-info p {
+    font-size: 1em;
+    color:rgb(255, 255, 255) ;
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #333; /* Cor de fundo escura no rodapé */
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .projects .project,
+    .skills .skill {
+        width: 100%;
+    }
+
+    nav a {
+        padding: 12px 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    nav a {
+        padding: 10px 12px;
+        font-size: 0.9em;
+    }
+
+    .project, .skill, .contact-info {
+        width: 100%;
+    }
+}
